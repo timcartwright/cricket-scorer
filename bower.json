@@ -1,0 +1,25 @@
+{
+  "name": "name",
+  "description": "description",
+  "main": "",
+  "authors": [
+    "Tim Cartwright"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/timcartwright/",
+  "moduleType": [],
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap-sass": "bootstrap-sass-official#~3.3.5",
+    "angular": "~1.4.7",
+    "firebase": "~2.3.1",
+    "angularfire": "~1.1.3",
+    "jquery": "~2.1.4"
+  }
+}
