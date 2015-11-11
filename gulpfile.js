@@ -42,8 +42,11 @@ bowerDir = 'bower_components/' ;
 //coffeeSources = ['components/coffee/*.coffee'];
 jsSources = [
 	bowerDir + 'jquery/dist/jquery.js',
-	bowerDir + 'bootstrap-sass/assets/javascripts/bootstrap.js',	
-	'components/scripts/*.js'];
+	bowerDir + 'bootstrap-sass/assets/javascripts/bootstrap.js',
+	bowerDir + 'angular/angular.min.js',
+	bowerDir + 'firebase/firebase.js',
+	bowerDir + 'angularfire/dist/angularfire.min.js',
+						 'components/scripts/*.js'];
 sassSources = ['components/sass/main.scss'];
 htmlSources = [outputDir + '*.html'];
 jsonSources = [outputDir + 'js/*.json'];
@@ -67,7 +70,7 @@ gulp.task('bower', function() { 
 // jS
 gulp.task('js', function() {
 	gulp.src(jsSources)
-	.pipe(gulpif(env === 'production', concat('script.js')))
+	.pipe(concat('script.js'))
 	//.pipe(browserify())
 	.pipe(gulpif(env === 'production', uglify()))
 	.pipe(gulp.dest(outputDir + 'js'))
