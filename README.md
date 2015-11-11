@@ -1,3 +1,3 @@
-# Tim's Gulp Workflow
+# Cricket Scorer
 
-Template
+A cricket scorer web app using Angular and Firebase
